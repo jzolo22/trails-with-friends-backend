@@ -1,0 +1,2 @@
+class UserTrail < ApplicationRecord
+end
