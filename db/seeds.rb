@@ -6,7 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.destroy_all 
+Trail.destroy_all 
+UserTrail.destroy_all 
 
-# hello hello testing!!
 
-# hellooooooo test # 2
+tashawn = User.create(name: "Tashawn", username: "TW", age: 30, city: "LA")
+
+
+alpine = Trail.create(name: "Alpine", length: 4, location: "NJ", duration: 180)
+
+
+tashawnAlpine = UserTrail.create(user_id: User.first.id, trail_id: Trail.first.id, date: Date.today)
+
+
