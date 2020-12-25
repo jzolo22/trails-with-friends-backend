@@ -11,11 +11,11 @@ Trail.destroy_all
 UserTrail.destroy_all 
 
 
-tashawn = User.create(name: "Tashawn", username: "TW", age: 30, city: "LA")
+tashawn = User.create!(name: "Tashawn", username: "TW", age: 30, city: "LA", password: "password123")
 
-alpine = Trail.create(name: "Alpine", length: 4, location: "NJ", duration: 180)
+alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy")
 
-# Trail.create(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52)
+pw = Trail.create!(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52, difficulty: "easy")
 # Trail.create(name: "Central Park Trail", length: 4, location: "New York, NY", duration: 96)
 # Trail.create(name: "Prospect Park Loop", length: 4, location: "Brooklyn, NY", duration: 95)
 # Trail.create(name: "Staten Island Greenbelt Trail", length: 3, location: "Brooklyn, NY", duration: 79)
