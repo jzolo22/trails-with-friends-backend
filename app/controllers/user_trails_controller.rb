@@ -1,2 +1,5 @@
 class UserTrailsController < ApplicationController
+
+    
+
 end
