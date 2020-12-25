@@ -13,8 +13,12 @@ UserTrail.destroy_all
 
 tashawn = User.create(name: "Tashawn", username: "TW", age: 30, city: "LA")
 
-
 alpine = Trail.create(name: "Alpine", length: 4, location: "NJ", duration: 180)
+
+Trail.create(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52)
+Trail.create(name: "Central Park Trail", length: 4, location: "New York, NY", duration: 96)
+Trail.create(name: "Prospect Park Loop", length: 4, location: "Brooklyn, NY", duration: 95)
+Trail.create(name: "Staten Island Greenbelt Trail", length: 3, location: "Brooklyn, NY", duration: 79)
 
 
 tashawnAlpine = UserTrail.create(user_id: User.first.id, trail_id: Trail.first.id, date: Date.today)
