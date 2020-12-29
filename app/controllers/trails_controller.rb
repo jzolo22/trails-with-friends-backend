@@ -1,5 +1,5 @@
 class TrailsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :show] 
+    skip_before_action :authorized, only: [:index, :show, :create] 
 
     def index 
         trails = Trail.all
@@ -11,8 +11,15 @@ class TrailsController < ApplicationController
         render json: trail
     end
 
-    # def create
+    def create
+        @trail = Trail.create(trail_params)
+        render json: @trail
+    end
 
-    # end
+    private
+
+    def trail_params
+        params.require(:trail).permit(:name, :length, :location, :duration, :difficulty)
+    end
 
 end
