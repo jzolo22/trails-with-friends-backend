@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :user_trails
   resources :trails
 
-  resources :users, only: [:create]
+  resources :users, only: [:create, :index]
   
   post '/login', to: 'auth#create'
   get '/profile', to: 'users#profile'
