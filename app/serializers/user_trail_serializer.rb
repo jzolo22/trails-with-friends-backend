@@ -16,7 +16,8 @@ class UserTrailSerializer < ActiveModel::Serializer
         trail_length: self.object.trail.length,
         trail_location: self.object.trail.location,
         trail_duration: self.object.trail.duration,
-        trail_difficulty: self.object.trail.difficulty
+        trail_difficulty: self.object.trail.difficulty,
+        trail_image: self.object.trail.image_url
     }
   end
 

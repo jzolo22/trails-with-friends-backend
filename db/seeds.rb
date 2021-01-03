@@ -11,9 +11,9 @@ Trail.destroy_all
 UserTrail.destroy_all 
 
 
-tashawn = User.create!(name: "Tashawn", username: "TW", age: 30, city: "LA", password: "password123")
+tashawn = User.create!(name: "Tashawn", username: "TW", age: 30, city: "LA", password: "password123", image_url: "https://media-exp1.licdn.com/dms/image/C4E03AQG2OsxO3Osdgw/profile-displayphoto-shrink_200_200/0/1579100870890?e=1615420800&v=beta&t=o8Xfii1KntBbLvWPgRGqW2CFukfgh5JO_r2IaYZ_gqU")
 
-alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy")
+alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy", image_url: "https://www.njpalisades.org/images/stairsDown.jpg")
 
 pw = Trail.create!(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52, difficulty: "easy")
 # Trail.create(name: "Central Park Trail", length: 4, location: "New York, NY", duration: 96)
