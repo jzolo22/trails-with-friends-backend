@@ -1,6 +1,13 @@
 
-class UserTrailsSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :date, :trail
+class UserTrailSerializer < ActiveModel::Serializer
+  attributes :id, :user, :date, :trail
+
+  def user
+    {
+      user_id: self.object.user.id,
+      user_name: self.object.user.name,
+    }
+  end
 
   def trail 
     {
