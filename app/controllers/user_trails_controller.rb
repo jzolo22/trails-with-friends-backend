@@ -1,6 +1,6 @@
 class UserTrailsController < ApplicationController
 
-    skip_before_action :authorized, only: [:index, :create]
+    skip_before_action :authorized, only: [:index, :create, :destroy]
 
     def index 
         user_trails = UserTrail.all
@@ -16,6 +16,11 @@ class UserTrailsController < ApplicationController
         @user_trail = UserTrail.create!(user_trail_params)
         # render json: @user_trail
         render json: { user_trail: UserTrailsSerializer.new(@user_trail) }
+    end
+
+    def destroy 
+        @user_trail = UserTrail.find(params[:id])
+        @user_trail.destroy
     end
 
     private
