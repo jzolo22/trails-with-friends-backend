@@ -15,7 +15,7 @@ tashawn = User.create!(name: "Tashawn", username: "TW", age: 30, city: "LA", pas
 
 alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy", image_url: "https://www.njpalisades.org/images/stairsDown.jpg")
 
-pw = Trail.create!(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52, difficulty: "easy")
+pw = Trail.create!(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52, difficulty: "easy", image_url: "https://cdn-assets.alltrails.com/uploads/photo/image/19464398/extra_large_7a6af1ece3b8ec464043d2b6fe0a48fe.jpg")
 # Trail.create(name: "Central Park Trail", length: 4, location: "New York, NY", duration: 96)
 # Trail.create(name: "Prospect Park Loop", length: 4, location: "Brooklyn, NY", duration: 95)
 # Trail.create(name: "Staten Island Greenbelt Trail", length: 3, location: "Brooklyn, NY", duration: 79)
