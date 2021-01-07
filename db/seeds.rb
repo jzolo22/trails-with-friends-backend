@@ -11,7 +11,32 @@ Trail.destroy_all
 UserTrail.destroy_all 
 
 
-tashawn = User.create!(name: "Tashawn", username: "TW", age: 30, city: "LA", password: "password123", image_url: "https://media-exp1.licdn.com/dms/image/C4E03AQG2OsxO3Osdgw/profile-displayphoto-shrink_200_200/0/1579100870890?e=1615420800&v=beta&t=o8Xfii1KntBbLvWPgRGqW2CFukfgh5JO_r2IaYZ_gqU")
+tashawn = User.create!(name: "Tashawn", username: "TW", age: 30, city: "Los Angeles", password: "password123", image_url: "https://media-exp1.licdn.com/dms/image/C4E03AQG2OsxO3Osdgw/profile-displayphoto-shrink_200_200/0/1579100870890?e=1615420800&v=beta&t=o8Xfii1KntBbLvWPgRGqW2CFukfgh5JO_r2IaYZ_gqU")
+
+bg = User.create!(name: "Bryan G", username: "bryang", age: 30, city: "Queens", password: "password123")
+cc = User.create!(name: "Chris", username: "chrisc", age: 30, city: "Schenectady NY", password: "password123")
+dl = User.create!(name: "Demetrio", username: "demetriol", age: 30, city: "Brooklyn NY", password: "password123")
+es = User.create!(name: "Eitan", username: "eitancs", age: 30, city: "Cold Spring NY", password: "password123")
+ja = User.create!(name: "James", username: "jamesa", age: 30, city: "Brooklyn NY", password: "password123")
+jg = User.create!(name: "Javaughn", username: "javaughng", age: 19, city: "Brooklyn NY", password: "password123")
+sg = User.create!(name: "Shevaughn", username: "shevaughng", age: 19, city: "Brooklyn NY", password: "password123")
+jk = User.create!(name: "Joe", username: "joek", age: 30, city: "Brooklyn NY", password: "password123")
+je = User.create!(name: "John", username: "johne", age: 19, city: "Brooklyn NY", password: "password123")
+jp = User.create!(name: "Jomarie", username: "jomariep", age: 30, city: "Edgewater NJ", password: "password123")
+kg = User.create!(name: "Karina", username: "karinag", age: 30, city: "Brooklyn NY", password: "password123")
+kh = User.create!(name: "Kevin", username: "kevinh", age: 30, city: "Brooklyn NY", password: "password123")
+lm = User.create!(name: "Lee", username: "leem", age: 30, city: "Brooklyn NY", password: "password123")
+mk = User.create!(name: "Mary", username: "maryk", age: 30, city: "New Jersey", password: "password123")
+pa = User.create!(name: "Patricia", username: "patriciaa", age: 30, city: "Brooklyn NY", password: "password123")
+rr = User.create!(name: "Rebecca", username: "rebeccar", age: 30, city: "Saratoga FL", password: "password123")
+rt = User.create!(name: "Roman", username: "romant", age: 30, city: "Brooklyn NY", password: "password123")
+sb = User.create!(name: "Sam", username: "samdb", age: 30, city: "Brooklyn NY", password: "password123")
+sd = User.create!(name: "Sean D", username: "seand", age: 30, city: "Brooklyn NY", password: "password123")
+sp = User.create!(name: "Sean P", username: "seanp", age: 30, city: "Brooklyn NY", password: "password123")
+st = User.create!(name: "Shelby", username: "shelbyp", age: 30, city: "Brooklyn NY", password: "password123")
+sw = User.create!(name: "Steven", username: "stevenw", age: 30, city: "Brooklyn NY", password: "password123")
+vt = User.create!(name: "Victor", username: "victort", age: 30, city: "Bronx NY", password: "password123")
+wn = User.create!(name: "Warren", username: "warrenn", age: 30, city: "Brooklyn NY", password: "password123")
 
 alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy", image_url: "https://www.njpalisades.org/images/stairsDown.jpg")
 
@@ -22,6 +47,27 @@ cp = Trail.create(name: "Central Park Trail", length: 4, location: "New York, NY
 pp = Trail.create(name: "Prospect Park Loop", length: 4, location: "Brooklyn, NY", duration: 95, difficulty: "easy", image_url: "https://d21xlh2maitm24.cloudfront.net/nyc/propsect-park-summer.jpg?mtime=20161129143144")
 
 si = Trail.create(name: "Staten Island Greenbelt Trail", length: 3, location: "Brooklyn, NY", duration: 79, difficulty: "easy", image_url: "https://thebannercsi.files.wordpress.com/2018/11/hiking.jpg")
+
+pc = Trail.create(name: "Potato Chip Rock via Mt Woodson Trail", length: 7.6, location: "Lake Poway Park, CA", duration: 242, difficulty: "medium", image_url: "https://awol.junkee.com/wp-content/uploads/2016/08/20781035178_e63838909b_k-e1471579523720.jpg")
+vf = Trail.create(name: "Vernal and Nevada Falls via the Mist Trail", length: 8.8, location: "Yosemite National Park, CA", duration: 301, difficulty: "hard", image_url: "https://boundtoexplore.com/wp-content/uploads/2019/07/mist-trail-hike-yosemite-15.jpg")
+ef = Trail.create(name: "Bridge to Nowhere East Fork Trail", length: 9.5, location: "Angeles National Forest, CA", duration: 229, difficulty: "medium", image_url: "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/02/5d/7b/14/the-bridge-to-nowhere.jpg")
+uy = Trail.create(name: "Upper Yosemite Falls Trail", length: 7.6, location: "Yosemite Natioal Park, CA", duration: 270, difficulty: "hard", image_url: "https://hikethepla.net/wp-content/uploads/2019/06/Upper_Falls-1024x768.jpg")
+af = Trail.create(name: "Alamere Falls", length: 12.2, location: "Point Reyes National Seashore, CA", duration: 353, difficulty: "medium", image_url: "https://kid101.com/wp-content/uploads/2017/05/Alamere-Falls-Point-Reyes-National-Seashore.jpg")
+im = Trail.create(name: "Iron Mountain Trail", length: 5.2, location: "Poway, CA", duration: 170, difficulty: "medium", image_url: "https://i.pinimg.com/originals/e3/34/e7/e334e7e7d9ef77aaa526ffc46f19e221.jpg")
+ec = Trail.create(name: "Eaton Canyon Trail", length: 3.5, location: "Eaton Canyon Natural Area Park, CA", duration: 102, difficulty: "easy", image_url: "https://i1.wp.com/backyard-destinations.com/wp-content/uploads/2017/03/1-eaton-canyon-hike.jpg?fit=1024%2C768&ssl=1")
+vf = Trail.create(name: "Vernal Falls", length: 4, location: "Yosemite National Park, CA", duration: 136, difficulty: "medium", image_url: "https://www.outdoorproject.com/sites/default/files/styles/hero_image_desktop/public/features/2014_05_26_outdoor_project_-003-2.jpg?itok=Bc0kZJ-i")
+mt = Trail.create(name: "Mount Tallac Trail", length: 10.9, location: "Desolation Wilderness, CA", duration: 383, difficulty: "hard", image_url: "https://s.hdnux.com/photos/07/03/22/1848486/7/1200x0.jpg")
+sc = Trail.create(name: "Solstice Canyon Loop", length: 3.2, location: "Santa Monica Mountains National Recreation Area, CA", duration: 110, difficulty: "medium", image_url: "https://www.exploretheusa.com/media/image/67630.jpg")
+em = Trail.create(name: "Echo Mountain via Sam Merrill Trail", length: 5.4, location: "Angeles National Forest, CA", duration: 188, difficulty: "medium", image_url: "https://socalhiker.net/echo-mountain-via-the-sam-merrill-trail/img_0708/")
+hd = Trail.create(name: "Half Dome Trail", length: 15, location: "Yosemite National Park, CA", duration: 541, difficulty: "hard", image_url: "https://s27363.pcdn.co/wp-content/uploads/2020/05/How-to-Hike-Half-Dome.jpg.optimal.jpg")
+tp = Trail.create(name: "Tomales Point Trail", length: 9.4, location: "Point Reyes National Seashore, CA", duration: 275, difficulty: "medium", image_url: "https://lh3.googleusercontent.com/proxy/zF3yOBtKoD58fquWg3IH0T5Kpk4eVfVzrfZh5OfZW1Id4PksT5rJBEcrDoTI9kRH_J1P4tcVr6r4ScaYTqu2O_i-Al7gEw")
+dsr = Trail.create(name: "Matt Davis Loop", length: 6.7, location: "Mount Tamalpais State Park, CA", duration: 221, difficulty: "medium", image_url: "https://i.pinimg.com/originals/80/d7/66/80d76605dd8339daa05dc15d1476dc7b.jpg")
+cm = Trail.create(name: "Cowles Mountain Trail", length: 3, location: "Mission Trails Regional Park, CA", duration: 109, difficulty: "medium", image_url: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_677,q_85,w_1280/v1/clients/raleigh/Walnut_Creek_Trail_Horizontal_5df1bf23-9b93-4a55-82fa-0d64a82dbc0a.jpg")
+bst = Trail.create(name: "Black Star Canyon Falls Trail", length: 6.8, location: "Cleveland National Forest, CA", duration: 202, difficulty: "hard", image_url: "https://thebillbeaverproject.com/wp-content/uploads/2013/10/BlackStarTrail.jpg")
+mwt = Trail.create(name: "Mount Whitney Trail", length: 22.5, location: "Inyo National Forest, CA", duration: 79, difficulty: "hard", image_url: "https://i2.wp.com/northtosouth.us/wp-content/uploads/2018/08/mt-whitney-trail-crest-diana-southern-2490.jpg")
+ice = Trail.create(name: "Icehouse Canyon to Cucamonga Peak Trail", length: 11.6, location: "Cucamonga Wilderness, CA", duration: 455, difficulty: "hard", image_url: "https://nobodyhikesinla.files.wordpress.com/2010/06/hiking-5-309.jpg")
+
+
 
 
 tashawnAlpine = UserTrail.create(user_id: User.first.id, trail_id: Trail.first.id, date: Date.today)
