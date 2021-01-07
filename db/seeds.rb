@@ -92,4 +92,7 @@ ice = Trail.create(name: "Icehouse Canyon to Cucamonga Peak Trail", length: 11.6
 
 tashawnAlpine = UserTrail.create(user_id: User.first.id, trail_id: Trail.first.id, date: Date.today)
 
+75.times do
+    UserTrail.create!(user_id: User.all.sample.id, trail_id: Trail.all.sample.id, date: Date.today)
+end
 
