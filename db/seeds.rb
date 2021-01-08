@@ -39,9 +39,9 @@ vt = User.create!(name: "Victor", username: "victort", age: 30, city: "Bronx NY"
 wn = User.create!(name: "Warren", username: "warrenn", age: 30, city: "Brooklyn NY", password: "password123")
 
 
-alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy", image_url: "https://www.njpalisades.org/images/stairsDown.jpg")
+# alpine = Trail.create!(name: "Alpine", length: 4, location: "NJ", duration: 180, difficulty: "easy", image_url: "https://www.njpalisades.org/images/stairsDown.jpg")
 
-pw = Trail.create!(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52, difficulty: "easy", image_url: "https://lh3.googleusercontent.com/proxy/N2wiRPurTBJyqf8VgTDZ47vNjQG8NaeqV3i2D7bk6PloX-tZ3iL-rKn7nyYaOS-2XMkD-ib9x5EmNexPbJte1bXG0vGFFFJLqiKUSr7qpoJ-K_eDlxUtU8nnEp9Kox-Y11IMuPC2eDggErlgezOFVklbog")
+# pw = Trail.create!(name: "Sands Point Preserve Loop Trail", length: 2, location: "Port Washington, NY", duration: 52, difficulty: "easy", image_url: "https://lh3.googleusercontent.com/proxy/N2wiRPurTBJyqf8VgTDZ47vNjQG8NaeqV3i2D7bk6PloX-tZ3iL-rKn7nyYaOS-2XMkD-ib9x5EmNexPbJte1bXG0vGFFFJLqiKUSr7qpoJ-K_eDlxUtU8nnEp9Kox-Y11IMuPC2eDggErlgezOFVklbog")
 
 cp = Trail.create(name: "Central Park Trail", length: 4, location: "New York, NY", duration: 96, difficulty: "easy", image_url: "https://nypost.com/wp-content/uploads/sites/2/2018/07/central-park-conservancy.jpg?quality=80&strip=all")
 
@@ -93,6 +93,7 @@ ice = Trail.create(name: "Icehouse Canyon to Cucamonga Peak Trail", length: 11.6
 tashawnAlpine = UserTrail.create(user_id: User.first.id, trail_id: Trail.first.id, date: Date.today)
 
 75.times do
-    UserTrail.create!(user_id: User.all.sample.id, trail_id: Trail.all.sample.id, date: Date.today)
+    UserTrail.create!(user_id: User.all.sample.id, trail_id: Trail.all.sample.id, date: Date.today-rand(100))
 end
+
 
