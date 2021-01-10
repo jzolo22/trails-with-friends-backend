@@ -1,24 +1,7 @@
-# README
+## Welcome to Trails With Friends!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a trail-logging application, built on React.js/Redux for the front end, and a Rails API.
+Please enjoy browsing the trails, and feel free to add to our database!
+https://trails-with-friends.netlify.app/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you'd like to check out the front end code, head here: https://github.com/jzolo22/trails-with-friends-frontend.
