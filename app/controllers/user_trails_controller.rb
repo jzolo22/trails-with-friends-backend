@@ -13,14 +13,13 @@ class UserTrailsController < ApplicationController
     end
 
     def create
-        @user_trail = UserTrail.create!(user_trail_params)
-        # render json: @user_trail
-        render json: { user_trail: UserTrailSerializer.new(@user_trail) }
+        user_trail = UserTrail.create!(user_trail_params)
+        render json: { user_trail: UserTrailSerializer.new(user_trail) }
     end
 
     def destroy 
-        @user_trail = UserTrail.find(params[:id])
-        @user_trail.destroy
+        user_trail = UserTrail.find(params[:id])
+        user_trail.destroy
     end
 
     private

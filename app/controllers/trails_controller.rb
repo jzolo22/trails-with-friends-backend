@@ -12,8 +12,8 @@ class TrailsController < ApplicationController
     end
 
     def create
-        @trail = Trail.create(trail_params)
-        render json: @trail
+        trail = Trail.create(trail_params)
+        render json: trail
     end
 
     private
